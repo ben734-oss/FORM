@@ -120,7 +120,7 @@ CV: ${cv ? cv.name : 'Not provided'}`;
         const encodedMessage = encodeURIComponent(message);
         
         // Replace with your actual phone number (with country code but without + or 00)
-        const phoneNumber = "1234567890";
+        const phoneNumber = "233241360585";
         
         // Create WhatsApp URL
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -135,3 +135,4 @@ CV: ${cv ? cv.name : 'Not provided'}`;
         document.getElementById('nannyApplicationForm').reset();
     }
 });
+
