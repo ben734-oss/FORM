@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - NannyConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NannyConnect</h1>
+            <p>Application Form</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="application.html" class="active">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="application-form">
+            <div class="container">
+                <h2>Nanny Application Form</h2>
+                <p>Please fill out all fields accurately. Fields marked with * are required.</p>
+                
+                <form id="nannyApplicationForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number *</label>
+                        <input type="tel" id="contactNumber" name="contactNumber" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="educationLevel">Education Level *</label>
+                        <select id="educationLevel" name="educationLevel" required>
+                            <option value="">Select Education Level</option>
+                            <option value="SHS">Senior High School (SHS)</option>
+                            <option value="Associate">Associate Degree</option>
+                            <option value="Bachelor">Bachelor's Degree</option>
+                            <option value="Master">Master's Degree or Higher</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-group">
+    <label for="nationality">Nationality *</label>
+    <select id="nationality" name="nationality" required>
+        <option value="">Select your nationality</option>
+        <option value="Ghanaian">Ghanaian</option>
+        <option value="Nigerian">Nigerian</option>
+        <option value="Kenyan">Kenyan</option>
+        <option value="South African">South African</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+
+
+<div class="form-group">
+    <label for="reference">Reference Name & Contact *</label>
+    <textarea id="reference" name="reference" rows="2" placeholder="Name and contact of reference" required></textarea>
+</div>
+
+                    <div class="form-group">
+                        <label for="experience">Work Experience & References *</label>
+                        <textarea id="experience" name="experience" rows="5" required></textarea>
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 NannyConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="form-validation.js"></script>
+</body>
+</html>
